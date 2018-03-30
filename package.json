@@ -1,0 +1,18 @@
+{
+  "name": "dynamic-dual-import-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Makes dual import (js chunk + css chunk) for dynamic import and require.ensure. It works in cooperation with extract-css-chunks-webpack-plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon -w ./ -x 'jasmine --config=./jasmine.json'"
+  },
+  "author": "Constantine Oupirum",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine": "^3.1.0",
+    "nodemon": "^1.17.2"
+  },
+  "dependencies": {
+    "loader-utils": "^1.1.0"
+  }
+}
