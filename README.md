@@ -56,7 +56,7 @@ module.exports = {
 </head>
 ```
 
-**4.** After this `import()` and `require.ensure` will import both .js and .css chunks.
+**4.** After this `import()` and `require.ensure` will automatically import both .js and .css chunks.
 
 **But** format have to be:
 
