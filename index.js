@@ -1,3 +1,4 @@
+'use strict';
 
 function DynamicDualImportPlugin(options) {
 	this.options = options || {};
