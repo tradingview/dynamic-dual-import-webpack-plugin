@@ -74,6 +74,7 @@ describe('loader;', () => {
 		expected.push(`
 						Promise.all([import(/* webpackChunkName: "four" */ 'chart-client/js/containers/header-toolbar/seeking-alpha-toolset'),importCss("four")]).then(promises => promises[0]) : Promise.all([import(/* webpackChunkName: "five" */ 'chart-client/js/containers/header-toolbar/full-toolset'),importCss("five")]).then(promises => promises[0]);`)
 
+		spyOn(loaderUtils, 'getOptions').and.returnValue({});
 		const processed = loader(source.join('\n'));
 		for (let i in expected) {
 			expect(processed.indexOf(expected[i])).not.toBe(-1, expected[i]);
