@@ -9,12 +9,13 @@ DynamicDualImportPlugin.prototype.apply = function(compiler) {
 
 	compiler.plugin("emit", (compilation, callback) => {
 		const cssChunksHash = {};
+		const cssFilePatt = /\.css$/;
 		for (let i = 0; i < compilation.chunks.length; i++) {
 			const chunk = compilation.chunks[i];
 			const name = chunk.name || chunk.id;
 			if (name) {
 				for (let j = 0; j < chunk.files.length; j++) {
-					if (/\.css$/.test(chunk.files[j])) {
+					if (cssFilePatt.test(chunk.files[j])) {
 						cssChunksHash[name] = publicPath + chunk.files[j];
 					}
 				}
