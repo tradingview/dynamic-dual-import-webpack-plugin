@@ -1,6 +1,6 @@
 {
   "name": "dynamic-dual-import-webpack-plugin",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Makes dual import (js chunk + css chunk) for dynamic import and require.ensure. It works in cooperation with extract-css-chunks-webpack-plugin.",
   "main": "index.js",
   "scripts": {
